@@ -40,6 +40,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 40px;
 }
 
 .social-media {
@@ -70,7 +71,7 @@ li {
 }
 
 .menu-link ul li {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -83,11 +84,9 @@ li {
   color:#F15A23;
   border-bottom: 5px solid #F15A23;
   cursor: pointer;
+  padding-bottom: 7px;
 }
 
-.social-media ul li {
-  font-size: 1.8rem;
-}
 
 .social-media .hamburger-menu {
   display: none;

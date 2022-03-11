@@ -1,0 +1,93 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+.container{
+  background: linear-gradient(to bottom, #A7B8C6 0%, #A7B8C6 30%, white 0%,white 100%)
+}
+.video {
+  border: 1px solid #000;
+  width: 80vw;
+  margin: 0 auto;
+  background: #C1D5E3;
+  height: 48vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.video img{
+  opacity: 25%;
+  position: absolute;
+  width: 40vw;
+}
+
+.story-section {
+  background: #C1D5E3;
+  width: 80vw;
+  height: 48vw;
+  margin: 0 auto;
+  border: 1px solid #000;
+  text-align: center;
+}
+.story-section h1 {
+  color: #000;
+  padding-top: 5vw;
+  font-size: 4.5vw;
+  padding-bottom: 3vw;
+}
+
+.story-section p {
+  width: 92%;
+  margin: 0 auto;
+  color: #000;
+  font-size: 1.3vw;
+
+}
+
+.slider {
+  margin:0 auto;
+  margin-top: 240px;
+  padding-bottom: 180px;
+  text-align: center;
+  background: linear-gradient(to top, #F15A23 0%,#F15A23 90%,white 51%,white 100%);
+}
+
+.slider-button {
+  margin:0 auto;
+  width: 12%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.slider-picture {
+  width: 363.5px;
+}
+
+.express-detail {
+  border: 2px solid #000;
+  width: 80vw;
+  margin: 0 auto;
+  background: #ffffff;
+  height: 48vw;
+  display: flex;
+  justify-content: start;
+  margin-top: 180px;
+}
+
+.express-detail h1{
+  padding: 5vw;
+  font-size: 4.5vw;
+}
+@media (max-width: 968px) {
+  .story-section{
+    height: auto;
+  }
+  .story-section p {
+    font-size: 8px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .slider-picture {
+    width: 250px;
+  }
+}
