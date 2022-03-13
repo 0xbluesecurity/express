@@ -1,0 +1,72 @@
+.roadmap-step1 {
+  display:flex;
+  margin-bottom: 3vh;
+}
+.step-left {
+  border: 1px solid #000;
+  width: 7vw;
+  display: flex;  
+  background: #F15A23;
+}
+.step-left p {
+  font-size:1.5vw;
+  white-space: nowrap;
+  padding-top: 4vw;
+  padding-left: 1.5vw;
+}
+
+.step-right {
+  border: 1px solid #000;
+  margin-left: 10%;
+  height: 100%;
+  width: 60vw;
+}
+
+.step-right-odd {
+  border: 1px solid #000;
+  margin-left: 20%;
+  height: 100%;
+  width: 60vw;
+}
+
+.right-title {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-top: 3vw;
+}
+
+.right-title h1 {
+  padding:0;
+  font-size: 2.5vw;
+  margin-right: 5vw;
+}
+.right-title div {
+  background: #F15A23;
+  border: none;
+  height:4.5vw;
+  width: 14.25vw;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8vw;
+}
+.right-title div h2 {
+  font-size: 1.8vw;
+}
+.right-content {
+  width: 80%;
+  font-size:1.5vw;
+  display: flex;
+  text-align: left;
+  margin: 2vw auto;
+}
+
+
+@media (max-width: 968px) {
+  .step-left p {
+    font-size:1px;
+    padding-left: 1px;
+  }
+}

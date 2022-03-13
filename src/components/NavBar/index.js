@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import "./index.css";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Link } from "react-scroll"
@@ -21,19 +16,19 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-              <Link to="/">Story</Link>
+              <Link to="story" spy={true} smooth={true}>Story</Link>
             </li>
             <li>
-              <Link to="/about">The Fire Pit</Link>
+              <Link to="fire" spy={true} smooth={true}>The Fire Pit</Link>
             </li>
             <li>
-              <Link to="/service">Roadmap</Link>
+              <Link to="roadmap" spy={true} smooth={true}>Roadmap</Link>
             </li>
             <li>
-              <Link to="/contact">FAQ</Link>
+              <Link to="faq" spy={true} smooth={true}>FAQ</Link>
             </li>
             <li>
-              <Link to="/contact">Meet the Team</Link>
+              <Link to="team" spy={true} smooth={true}>Meet the Team</Link>
             </li>
           </ul>
         </div>

@@ -1,0 +1,59 @@
+.team-section {
+  width: 100%;
+  background: #000;
+  text-align: center;
+  color: white;
+}
+
+.blue-block {
+  background: #C1D5E3;
+  height: 10vw;
+  width: 80%;
+  border: 1px solid #000;
+  border-top: none;
+  margin: 0 auto;
+}
+
+.team-title {
+  margin-top: 20%;
+  font-size: 3.75vw;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  margin: 10% auto;
+  width:90%;
+}
+.team-members img {
+  width: 30%;
+}
+
+.join-community {
+  background: #fff;
+  text-align: center;
+  padding: 15% 0;
+}
+.join-community h1 {
+  color: #000;
+  font-size: 3.75vw;
+}
+.join-community div {
+  width: 30vw;
+  white-space: nowrap;
+  background: #F15A23;
+  padding: 1rem 0;
+  margin: 0 auto;
+  color: #000;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3vw;
+  margin-top: 4rem;
+}
+
+.join-community div:hover {
+  background: #dd3e04;
+  color: white;
+  cursor: pointer;
+}

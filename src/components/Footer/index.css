@@ -1,0 +1,25 @@
+.footer-section {
+  background: #A7B8C6;
+  width: 100%;
+  text-align: center;
+  padding: 15% 0;
+}
+
+.footer-section p {
+  font-size: 1vw; 
+}
+
+.logo {
+  width: 30%;
+}
+.icon-section {
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.icon {
+  width: 5%;
+  margin: 1rem;
+}
+.icon:hover {
+  cursor: pointer;
+}

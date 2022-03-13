@@ -44,6 +44,13 @@
   font-size: 2rem;
   overflow: hidden;
   font-weight: bold;
+  white-space: nowrap;
+  padding:0 1rem;
+  display: inline-block;
+  text-align: center;
+}
+.new-button:hover{
+  cursor: pointer;
 }
 
 .intro { 
@@ -69,6 +76,12 @@
   width: 15rem;
   border: none;
   background: #F15A23;
+}
+
+.social-link button:hover {
+  background: #dd3e04;
+  color: white;
+  cursor: pointer;
 }
 
 @media (max-width: 1280px) {

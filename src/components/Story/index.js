@@ -24,8 +24,8 @@ const Story = () => {
   const ref = useRef(null);
     return (
       <div className="container">
-        <div id="story" className="video">
-          <img src={iTitle}></img>
+        <div className="video">
+          <img src={iTitle} alt={"title"}></img>
           <ReactPlayer 
             url="https://www.youtube.com/watch?v=-X4ikwUwxoE" 
             width="100%"
@@ -33,7 +33,7 @@ const Story = () => {
             controls={true}
           />
         </div>
-        <div className="story-section">
+        <div className="story-section" id="story">
           <h1>The Story </h1>
           <p>
             When you picture a hippie, you likely envision a character that is stuck out of time. 
@@ -53,7 +53,7 @@ const Story = () => {
             a character that represents the true free world being built before our eyes.
           </p>
         </div>
-        <div className="slider">
+        <div className="slider" id="fire">
           <AliceCarousel
             ref = {ref}
             duration={200}
@@ -70,14 +70,14 @@ const Story = () => {
             disableButtonsControls={true}
             disableDotsControls={true}
           >
-            <img src={avatar1} className={"slider-picture"}/>
-            <img src={avatar2} className={"slider-picture"}/>
-            <img src={avatar3} className={"slider-picture"}/>
-            <img src={avatar4} className={"slider-picture"}/>
+            <img src={avatar1} className={"slider-picture"} alt={1}/>
+            <img src={avatar2} className={"slider-picture"} alt={2}/>
+            <img src={avatar3} className={"slider-picture"} alt={3}/>
+            <img src={avatar4} className={"slider-picture"} alt={4}/>
           </AliceCarousel>
           <div className="slider-button">
-            <img onClick={() => ref.current.slidePrev()} src={left}/>
-            <img onClick={() => ref.current.slideNext()} src={right}/>
+            <img onClick={() => ref.current.slidePrev()} src={left} alt={"prev"}/>
+            <img onClick={() => ref.current.slideNext()} src={right} alt={"next"}/>
           </div>
           <div className="express-detail">
             <h1>The Fire Pit </h1>
