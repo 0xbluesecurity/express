@@ -114,6 +114,15 @@ li {
     position: relative;
     z-index: 99;
   }
+  .menu-link ul{
+    padding-top: 0;
+  }
+
+  .menu-link ul li:hover > a {
+    border-bottom: 2px solid #F15A23;
+    cursor: pointer;
+    padding-bottom: 7px;
+  }
 
   .mobile-menu-link {
     background-color: white;
