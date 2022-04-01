@@ -3,10 +3,8 @@
   background: linear-gradient(to bottom, #A7B8C6 0%, #A7B8C6 30%, white 0%,white 100%)
 }
 .video {
-  border: 1px solid #000;
   width: 80vw;
   margin: 0 auto;
-  background: #C1D5E3;
   height: 48vw;
   display: flex;
   justify-content: center;
@@ -14,18 +12,18 @@
   margin-bottom: 80px;
 }
 .video img{
-  opacity: 25%;
+  opacity: 10%;
   position: absolute;
   width: 40vw;
 }
 
 .story-section {
-  background: #C1D5E3;
+  background: #fff;
   width: 80vw;
-  height: 48vw;
   margin: 0 auto;
-  border: 1px solid #000;
+  border: 5rem solid #F15A23;
   text-align: center;
+  padding-bottom: 5vh;
 }
 .story-section h1 {
   color: #000;
@@ -39,7 +37,6 @@
   margin: 0 auto;
   color: #000;
   font-size: 1.3vw;
-
 }
 
 .slider {
@@ -66,14 +63,19 @@
   width: 80vw;
   margin: 0 auto;
   background: #ffffff;
-  height: 48vw;
-  display: flex;
-  justify-content: start;
+  display: block;
   margin-top: 180px;
 }
-
+.express-detail p {
+  font-size: 1vw;
+  padding: 3vw;
+  padding-top: 0;
+  width: 80%;
+  margin: 0 auto;
+}
 .express-detail h1{
   padding: 5vw;
+  padding-bottom: 3vw;
   font-size: 4.5vw;
 }
 @media (max-width: 968px) {

@@ -56,14 +56,13 @@ const Home = () => {
           <div className="hero-man">
             <img src={iExpress} className="express-img"></img>
           </div>
-          <div className="coming-button">
-            <button className="new-button" onClick={activateProvider}> {account? ens ?? shortenAddress(account):"Connect Wallet"} </button>
-          </div>
           <div className="intro">
             <p>
-              Funk, meet web3. A collection of 8,888 unique digital hippies that
-              are building the new free world before our eyes.
+              Welcome to the express world!:)
             </p>
+          </div>
+          <div className="coming-button">
+            <button className="new-button" onClick={activateProvider}> {account? ens ?? shortenAddress(account):"Connect Wallet"} </button>
           </div>
           <div className="social-link">
             <button>Twitter</button>

@@ -52,6 +52,10 @@
   margin-top: 4rem;
 }
 
+.join-community div a{
+  color:#000;
+}
+
 .join-community div:hover {
   background: #dd3e04;
   color: white;

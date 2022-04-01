@@ -19,7 +19,7 @@ const Navbar = () => {
               <Link to="story" spy={true} smooth={true}>Story</Link>
             </li>
             <li>
-              <Link to="fire" spy={true} smooth={true}>The Fire Pit</Link>
+              <Link to="fire" spy={true} smooth={true}>The Multi-box</Link>
             </li>
             <li>
               <Link to="roadmap" spy={true} smooth={true}>Roadmap</Link>
