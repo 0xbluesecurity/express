@@ -1,7 +1,7 @@
 import './index.css'
-import avatar1 from '../../images/slider1.svg'
-import avatar4 from '../../images/slider4.svg'
-import avatar3 from '../../images/slider3.svg'
+import avatar1 from '../../images/express1.svg'
+import avatar4 from '../../images/express2.svg'
+import avatar3 from '../../images/express3.svg'
 import Fade from 'react-reveal/Fade'
 import Shake from 'react-reveal/Shake'
 import  { socialLink }  from '../../config'
@@ -28,13 +28,11 @@ export default () => {
       <div className="join-community">
         <h1 >Join the Express</h1>
         <h1 >community</h1>
-        <Shake delay={1500}>
         <div>
           <a href={socialLink.discord} target="_blank">
           Join our Discord
           </a>
         </div>
-        </Shake>
       </div>
       </Fade>
     </div>

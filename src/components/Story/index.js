@@ -3,15 +3,18 @@ import iTitle from '../../images/title2.svg'
 import ReactPlayer from 'react-player'
 import { useState, useEffect } from 'react'
 import AliceCarousel from 'react-alice-carousel'
-import avatar1 from '../../images/slider1.svg'
-import avatar2 from '../../images/slider2.svg'
-import avatar3 from '../../images/slider3.svg'
-import avatar4 from '../../images/slider4.svg'
-import avatar5 from '../../images/slider5.svg'
-import avatar6 from '../../images/slider6.svg'
-import avatar7 from '../../images/slider7.svg'
-import avatar8 from '../../images/slider8.svg'
-import avatar9 from '../../images/slider9.svg'
+import avatar1 from '../../images/slider1.png'
+import avatar2 from '../../images/slider2.png'
+import avatar3 from '../../images/slider3.png'
+import avatar4 from '../../images/slider4.png'
+import avatar5 from '../../images/slider5.png'
+import avatar6 from '../../images/slider6.png'
+import avatar7 from '../../images/slider7.png'
+import avatar8 from '../../images/slider8.png'
+import avatar9 from '../../images/slider9.png'
+import Ibox from '../../images/box.png'
+import leftBlock from '../../images/left-block.svg'
+import rightBlock from '../../images/right-block.svg'
 import left from '../../images/left.svg'
 import right from '../../images/right.svg'
 import Ifire from '../../images/fire.svg'
@@ -67,6 +70,8 @@ const Story = () => {
         </Fade>
         <Fade bottom duration={2000}>
         <div className="story-section" id="story">
+        <div className='block'></div>
+        <img src={leftBlock} className='left-block1'></img>
           <h1>The Story </h1>
           <p>
             Welcome to the Express world!<br/>
@@ -96,23 +101,31 @@ const Story = () => {
           </p>
         </div>
         </Fade>
+        <div className='intro1'>
+          <h1>Welcome to the Express world!</h1>
+        </div>
         <div className="slider" id="fire">
-        <Shake delay={500}>
+          <div className="slider-outline">
+            <div className='slider-inline'>
+              <div className='inline-block'></div>
+              <img src={leftBlock} className='left-block'></img>
+              <img src={rightBlock} className='right-block'></img>
+            </div>
           <AliceCarousel
             ref = {ref}
-            duration={200}
-            autoPlay={true}
             startIndex = {0}
             infinite={true}
             fadeOutAnimation={true}
             mouseDragEnabled={true}
             playButtonEnabled={true}
             responsive={responsive}
-            autoPlay={false}
             paddingLeft={padding}
+            autoPlay={true}
+            duration={1000}
             paddingRight={padding}
             disableButtonsControls={true}
             disableDotsControls={true}
+            style={{position:"absolute", zIndex: 999}}
           >
             <img src={avatar1} className={"slider-picture"} alt={1}/>
             <img src={avatar2} className={"slider-picture"} alt={2}/>
@@ -124,14 +137,14 @@ const Story = () => {
             <img src={avatar8} className={"slider-picture"} alt={8}/>
             <img src={avatar9} className={"slider-picture"} alt={9}/>
           </AliceCarousel>
-          </Shake>
           <div className="slider-button">
             <img onClick={() => ref.current.slidePrev()} src={left} alt={"prev"}/>
             <img onClick={() => ref.current.slideNext()} src={right} alt={"next"}/>
           </div>
+          </div>
           <Zoom duration={2000}>
           <div className="express-detail">
-            <h1>Multi-box </h1>
+            <img className="newimg" src={Ibox} ></img>
             <p>
               In daily life, couriers never leave their express boxes. In the world of Express nft, 
               each courier also own a diversified box. The material and shape of the box varies with the identity 

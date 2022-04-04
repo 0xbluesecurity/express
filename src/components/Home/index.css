@@ -26,7 +26,7 @@
 
 .express-img {
   margin-top: 40px;
-  width: 30rem;
+  width: 50rem;
 }
 
 .hero-man {
@@ -89,7 +89,7 @@
     width: 60vw;
   } 
   .express-img {
-    width: 25vw;
+    width: 40vw;
     margin-top:10px;
   }
   .intro { 
@@ -109,7 +109,7 @@
 
 @media (max-width: 968px) {
   .express-img {
-    width: 40vw;
+    width: 50vw;
     margin-top:10px;
   }
   .new-button {

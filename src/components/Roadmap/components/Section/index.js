@@ -2,7 +2,7 @@ import './index.css'
 import { FaCheck } from 'react-icons/fa'
 export default ({isDone,odd,date,title,main_content}) => {
   const isDoneStyle = {
-    opacity: "25%"
+    opacity: "40%"
   }
   return(
     <div className="roadmap-step1" style={isDone?{}:isDoneStyle}>

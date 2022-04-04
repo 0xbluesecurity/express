@@ -24,6 +24,20 @@
   border: 5rem solid #F15A23;
   text-align: center;
   padding-bottom: 5vh;
+  position: relative;
+}
+.block {
+  width: 6rem;
+  height: 3rem;
+  background-color: #000;
+  position: absolute;
+  top: 5%;
+  right: -5rem;
+}
+.left-block1{
+  position: absolute;
+  bottom: -1rem;
+  left: -4.5rem;
 }
 .story-section h1 {
   color: #000;
@@ -41,10 +55,38 @@
 
 .slider {
   margin:0 auto;
-  margin-top: 240px;
   padding-bottom: 180px;
   text-align: center;
-  background: linear-gradient(to top, #F15A23 0%,#F15A23 90%,white 51%,white 100%);
+  background: #F15A23;
+}
+
+.slider-outline {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.slider-inline {
+  width: 96%;
+  border: 1px solid black;
+  position: absolute;
+  left: 2%;
+  top: -100px;
+  height: 700px;
+}
+.inline-block {
+  background-color: #000;
+  height:20px;
+  width: 50px;
+}
+.left-block{
+  position: absolute;
+  top: 90%;
+  left: 3%;
+}
+.right-block{
+  position: absolute;
+  top: 90%;
+  right: 0;
 }
 
 .slider-button {
@@ -63,20 +105,42 @@
   width: 80vw;
   margin: 0 auto;
   background: #ffffff;
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-top: 180px;
+  justify-content: left;
 }
 .express-detail p {
   font-size: 1vw;
   padding: 3vw;
   padding-top: 0;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
-.express-detail h1{
-  padding: 5vw;
-  padding-bottom: 3vw;
-  font-size: 4.5vw;
+.newimg{
+  margin-bottom: 3vw;
+  width: 20%;
+  margin-top: 3vw;
+  margin-left: 10%;
+}
+.intro1 {
+  margin-top: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-bottom: 150px;
+  padding-top: 100px;
+  text-align: left;
+  background: #F15A23;
+}
+.intro1 h1 {
+  font-size: 2vw;
+  font-family: chakrapetch bold;
+  text-align: left;
+  padding-left: 5%;
+  line-height: 1.8vw;
+  width: 20vw;
+  font-weight: normal;
 }
 @media (max-width: 968px) {
   .story-section{
@@ -86,10 +150,40 @@
     font-size: 8px;
     padding-bottom: 20px;
   }
+  .intro1 h1 {
+    font-size: 3vw;
+    font-family: chakrapetch bold;
+    text-align: left;
+    padding-left: 10%;
+    line-height: 4vw;
+    width: 40vw;
+    font-weight: normal;
+  }
+  .block {
+    height: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
   .slider-picture {
     width: 250px;
+  }
+
+  .slider-inline {
+    top: -50px;
+    height: 500px;
+  }
+  .block {
+    height: 1rem;
+    width: 5.5rem;
+  }
+  .intro1 h1 {
+    font-size: 4vw;
+    font-family: chakrapetch bold;
+    text-align: left;
+    padding-left: 10%;
+    line-height: 5vw;
+    width: 50vw;
+    font-weight: normal;
   }
 }

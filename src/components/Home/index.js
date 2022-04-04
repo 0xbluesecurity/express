@@ -1,7 +1,6 @@
 import NavBar from '../NavBar'
 import './index.css'
-import iExpress from '../../images/express.svg'
-import iTitle from '../../images/title.png'
+import iExpress from '../../images/bannner.svg'
 import Story from '../Story'
 import Roadmap from '../Roadmap'
 import FAQ from '../FAQ'
@@ -12,6 +11,7 @@ import { message } from 'antd'
 import Web3Modal from 'web3modal'
 import WalletConnectProvider from '@walletconnect/web3-provider'
 import React, { useEffect, useState } from 'react'
+import { socialLink } from '../../config'
 const Home = () => {
     const { account, activate, deactivate } = useEthers()
     const ens = useLookupAddress()
@@ -52,7 +52,6 @@ const Home = () => {
       <div className="container">
         <NavBar />
         <div className="hero-section">
-          <img src={iTitle}  className="hero-title"></img>
           <div className="hero-man">
             <img src={iExpress} className="express-img"></img>
           </div>
@@ -65,8 +64,8 @@ const Home = () => {
             <button className="new-button" onClick={activateProvider}> {account? ens ?? shortenAddress(account):"Connect Wallet"} </button>
           </div>
           <div className="social-link">
-            <button>Twitter</button>
-            <button>Opensea</button>
+            <button><a href={socialLink.twitter} target="_blank" style={{color:"black"}}>Twitter</a></button>
+            <button><a href={socialLink.discord} target="_blank" style={{color:"black"}}>Discord</a></button>
           </div>
         </div>
         <Story/>

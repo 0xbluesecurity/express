@@ -8,12 +8,7 @@ import  { socialLink }  from '../../config'
 export default () => {
   return(
     <div className="footer-section">
-    <RubberBand duration={1500
-    
-    
-    }>
       <img src={logo} className="logo"/>
-    </RubberBand>
       <div className="icon-section">
         <a href={socialLink.discord} target="_blank"><img src={discord} className="icon"/></a>
         <a href={socialLink.twitter} target="_blank"><img src={twitter} className="icon"/></a>

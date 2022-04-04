@@ -3,44 +3,40 @@ const Content = [
     isDone: true,
     odd: true,
     date: "pre-launch.",
-    title: "COMMUNITY FIRST APPROACH",
-    main_content: "When we first began Dippies we had a simple goal in mind; to adopt a community first approach that holds a safe-space for all members. The process is simple but efficient. Peace, love and kindness toward others is a big part of who we are. Thats why our main objective is built around “how much value can we bring to our community?”. As this is a community driven project, we will be onboarding enthusiastic members of the community from day one. we plan on hosting AMA’s, organizing events, and maintaining 100% transparency at all times."
-  },
+    title: "Our Vision",
+    main_content: "We have the chance to realize our dreams due to the world of blockchain. We from various places get together for the same goal. We have the best team. Our purpose is to create communities, and one of our main goals is to create dynamic communities. We create NFT with the image of the deliveryman, and create the coolest brand in the metacosmic world and web2."  },
   {
-    isDone: true,
+    isDone: false,
     odd: false,
     date: "phase-one.",
-    title: "BOUNTY FOR KING/QUEEN DIPPIE",
-    main_content: "As we began brainstorming a roadmap, we knew we wanted to create a sense of excitement and suspense by giving every member of our community something to look forward to. If you mint the King/Queen Dippie (there are two of each) you will be sent 3 ETH straight to your wallet."
-  },
+    title: "Peripheral products",
+    main_content: "For the first time, we will airdrop clothes to Express NFT holders for free, and Express holders have lifelong right to enjoy various free airdrops. In the future, we plan to sell various peripheral products, and we will distribute 50% of the profit to Express NFT holders."  },
   {
-    isDone: true,
+    isDone: false,
     odd: true,
     date: "phase-two.",
-    title: "DippieStash",
-    main_content: "Community proposals to influence the future of DippieStash. 5% of primary mint and 25% of all secondary market royalty will be put in the DippieStash. Owning a Dippie grants you access to vote on how the funds are used and the opportunity to apply for paid positions within the community. This would also ensure long-term stability of the project. With the funds we can choose to donate to various hippie related causes, empower our artist community, create a virtual Woodstock in the metaverse and so much more."  
+    title: "Next plan",
+    main_content: "We plan to launch Express 3D version NFT, the Express NFT holders have the prior casting right. They can create 3D virtual streamers with the image of Express, create YouTube channels and produce ganmefi games. Different from other gamefi games, we will produce a game with new model, which will give you a new experience. In the game, Express NFT holders will have the highest yield.\
+    Recently, the off-line activity of Doodles has given us many enlightment. We will hold many activities including off-line gathering exhibition."
   },
   {
     isDone: false,
     odd: false,
     date: "phase-three.",
-    title: "MERCH",
-    main_content: "Who wouldn’t want to flex their Dippie drip IRL? The community will create and vote on the merchandise they want to rock. All Dippie holders would be able to receive discounts from all items on our store as well."  
-  },
+    title: "Cooperative Principles",
+    main_content: "We have confirmed our first partners. In the future, we will seek cross-border co-branded cooperation in more fields including music, art and technology etc."},
   {
     isDone: false,
     odd: true,
     date: "phase-four.",
-    title: "DippieStash",
-    main_content: "Community proposals to influence the future of DippieStash. 5% of primary mint and 25% of all secondary market royalty will be put in the DippieStash. Owning a Dippie grants you access to vote on how the funds are used and the opportunity to apply for paid positions within the community. This would also ensure long-term stability of the project. With the funds we can choose to donate to various hippie related causes, empower our artist community, create a virtual Woodstock in the metaverse and so much more."  
-  },
+    title: "Multi-box",
+    main_content: "Each courier also own a diversified box. The material and shape of the box varies with the identity of the courier, forming different combinations with the courier, In order to establish a club, it will hold activities full of unknowns."},
   {
     isDone: false,
     odd: false,
     date: "phase-five.",
-    title: "MERCH",
-    main_content: "Who wouldn’t want to flex their Dippie drip IRL? The community will create and vote on the merchandise they want to rock. All Dippie holders would be able to receive discounts from all items on our store as well."  
-  },
+    title: "Opensea authentication",
+    main_content: "DAO is an interesting innovation, which determine the development of the community by its all members rather than a few members. We will conduct a trial that the method to issue tokens used by DAO in a small scale, and we will conduct a careful and detailed evaluation before issuing tokens."},
 ]
 
 export default Content;
