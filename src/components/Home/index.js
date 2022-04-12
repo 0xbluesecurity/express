@@ -61,7 +61,7 @@ const Home = () => {
             </p>
           </div>
           <div className="coming-button">
-            <button className="new-button" onClick={activateProvider}> {account? ens ?? shortenAddress(account):"Connect Wallet"} </button>
+            <button className="new-button" onClick={activateProvider}> {account? ens ?? shortenAddress(account):"Comming soon"} </button>
           </div>
           <div className="social-link">
             <button><a href={socialLink.twitter} target="_blank" style={{color:"black"}}>Twitter</a></button>
