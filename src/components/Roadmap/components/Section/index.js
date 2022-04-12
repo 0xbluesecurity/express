@@ -1,5 +1,6 @@
 import './index.css'
 import { FaCheck } from 'react-icons/fa'
+import { RiRunLine } from 'react-icons/ri'
 export default ({isDone,odd,date,title,main_content}) => {
   const isDoneStyle = {
     opacity: "40%"
@@ -14,9 +15,9 @@ export default ({isDone,odd,date,title,main_content}) => {
           <h1>
             {title}
           </h1>
-          <div>
-            <FaCheck/>
-            <h2>complete</h2>
+          <div >
+            {isDone?<FaCheck/>:<RiRunLine/>}
+            <h2>{isDone?"complete":"Ongoing"}</h2>
           </div>
         </div>
         <div className="right-content">

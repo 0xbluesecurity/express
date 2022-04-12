@@ -21,13 +21,62 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 8vh;
+  padding-bottom: 30%;
 }
 
-
+.left {
+  margin-right: 40%;
+  width: 60%;
+  margin-top: -2vh;
+}
+.right {
+  margin-left: 40%;
+  width: 60%;
+  margin-top: -2vh;
+}
+.first {
+  display: flex;
+}
+.first h1 {
+  font-size: 4vw;
+}
+.right1 {
+  margin-left: calc(25% - 6vw);
+  margin-top: 30px;
+  width: 60%;
+}
+.mobile-step{
+  display:none;
+}
 @media (max-width: 968px) {
-  .roadmap-section p
+  .roadmap-steps{
+    padding: 0 5%;
+    margin-top: 3rem;
+    padding-bottom: 30%;
+  }
+  .roadmap-section
   {
-    font-size: 8px;
-    padding-bottom: 20px;
+    padding-bottom: 200px;
+  }
+  .left {
+    display:none;
+  }
+  .right {
+    display:none;
+  }
+  .first {
+    display: block;
+  }
+  .right1 {
+    display:none;
+  }
+  .mobile-step{
+    display:block;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .first h1{
+    font-size: 8vw;
+    text-align: left;
   }
 }

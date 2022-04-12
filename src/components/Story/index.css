@@ -27,8 +27,8 @@
   position: relative;
 }
 .block {
-  width: 6rem;
-  height: 3rem;
+  height:20px;
+  width: 80px;
   background-color: #000;
   position: absolute;
   top: 5%;
@@ -46,16 +46,16 @@
   padding-bottom: 3vw;
 }
 
-.story-section p {
+.pc-story {
   width: 92%;
   margin: 0 auto;
   color: #000;
   font-size: 1.3vw;
+  white-space: pre-wrap;
 }
 
 .slider {
   margin:0 auto;
-  padding-bottom: 180px;
   text-align: center;
   background: #F15A23;
 }
@@ -78,15 +78,15 @@
   height:20px;
   width: 50px;
 }
-.left-block{
+.story-left{
   position: absolute;
-  top: 90%;
-  left: 3%;
+  bottom: 2rem;
+  left: 1rem;
 }
-.right-block{
+.story-right{
   position: absolute;
-  top: 90%;
-  right: 0;
+  top: 1.5rem;
+  right: -1.7rem;
 }
 
 .slider-button {
@@ -95,13 +95,16 @@
   display: flex;
   justify-content: space-around;
 }
+.slider-button img{
+  z-index: 999;
+}
 
 .slider-picture {
   width: 363.5px;
 }
 
 .express-detail {
-  border: 2px solid #000;
+
   width: 80vw;
   margin: 0 auto;
   background: #ffffff;
@@ -111,7 +114,7 @@
   justify-content: left;
 }
 .express-detail p {
-  font-size: 1vw;
+  font-size: 1.3vw;
   padding: 3vw;
   padding-top: 0;
   width: 90%;
@@ -119,7 +122,7 @@
 }
 .newimg{
   margin-bottom: 3vw;
-  width: 20%;
+  width: 30%;
   margin-top: 3vw;
   margin-left: 10%;
 }
@@ -134,56 +137,157 @@
   background: #F15A23;
 }
 .intro1 h1 {
-  font-size: 2vw;
-  font-family: chakrapetch bold;
+  font-size: 3.75vw;
   text-align: left;
   padding-left: 5%;
-  line-height: 1.8vw;
-  width: 20vw;
+  line-height: 3vw;
   font-weight: normal;
 }
+.mobile-story{
+  display: none;
+  white-space: pre-wrap;
+}
+.mobile-extension{
+  display: none;
+}
+.pc-fire {
+  width: 100%;
+  display: block;
+}
+.mobile-fire{
+  width: 100%;
+  display: none;
+}
 @media (max-width: 968px) {
+  .mobile-fire{
+    display: block;
+  }
+  .pc-fire{
+    display: none;
+  }
+  .slider{
+    background: linear-gradient(to bottom, #F15A23 0%, #F15A23 75%, white 0%,white 100%)
+  }
+  .video {
+    width: 90vw;
+  }
+  .container{
+    background: linear-gradient(to bottom, #A7B8C6 0%, #A7B8C6 20%, white 0%,white 100%)
+  }
   .story-section{
     height: auto;
+    text-align: left;
+    width: 90%;
   }
-  .story-section p {
+  .story-section h1{
+    padding-left: 8%;
+    font-size: 3rem;
+  }
+  .mobile-story {
+    padding-top: 10%;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 100px;
+    margin: 0 auto;
+  }
+  .pc-story{
+    display: none;
+  }
+  .express-detail p {
     font-size: 8px;
-    padding-bottom: 20px;
   }
   .intro1 h1 {
-    font-size: 3vw;
-    font-family: chakrapetch bold;
-    text-align: left;
+    font-size: 3rem;
     padding-left: 10%;
-    line-height: 4vw;
-    width: 40vw;
-    font-weight: normal;
+    width: 40rem;
+    line-height: 3rem;
+  }
+  .story-section {
+    border: 1rem solid #F15A23;
   }
   .block {
-    height: 2rem;
+    height:10px;
+    width: 30px;
+    top: 2rem;
+    right: -1rem;
+  }
+  .left-block1{
+    bottom: 70px;
+    left: -0.5rem;
+    width: 5rem;
+  }
+  .express-detail{
+    width: 90%;
+    margin-top: 200px;
+  }
+  .express-detail p{
+    text-align: left;
+    padding: 0;
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+  }
+  .newimg{
+    margin-bottom: 3rem;
+    width: 50%;
+    margin-top: 3rem;
+    margin-left: 5%;
+  }
+  .intro1 {
+    margin-top: 100px;
+  }
+  .mobile-extension{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 8%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 500px) {
-  .slider-picture {
-    width: 250px;
+  .container{
+    background: linear-gradient(to bottom, #A7B8C6 0%, #A7B8C6 18%, white 0%,white 100%)
   }
-
+  .slider-picture {
+    width: 320px;
+  }
+  .express-detail{
+    width: 90%;
+    margin-top: 100px;
+  }
   .slider-inline {
     top: -50px;
-    height: 500px;
-  }
-  .block {
-    height: 1rem;
-    width: 5.5rem;
+    height: 600px;
+    width: 90%;
+    left: 5%;
   }
   .intro1 h1 {
-    font-size: 4vw;
-    font-family: chakrapetch bold;
-    text-align: left;
-    padding-left: 10%;
-    line-height: 5vw;
-    width: 50vw;
-    font-weight: normal;
+    font-size: 8vw;
+    width: 90vw;
+    line-height: 8vw;
+  }
+  .mobile-story{
+    font-size:16px;
+    padding-bottom: 50px;
+  }
+  .mobile-extension{
+    font-size: 16px;
+  }
+  .story-right{
+    top: 90%;
+    width: 15%;
+    right: -1rem;
+  }
+  .story-left{
+    width: 15%;
+    top: 90%;
+  }
+  .slider-button{
+    padding-top: 20%;
   }
 }

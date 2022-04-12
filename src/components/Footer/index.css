@@ -23,3 +23,23 @@
 .icon:hover {
   cursor: pointer;
 }
+
+@media (max-width: 968px) {
+  .logo {
+    width: 60%;
+  }
+  .icon {
+    width: 10%;
+    margin: 1rem;
+  }
+  .footer-section p {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (max-width: 600px) {
+  .icon {
+    width: 15%;
+    margin: 1rem;
+  }
+}

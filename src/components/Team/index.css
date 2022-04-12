@@ -7,7 +7,7 @@
 
 .blue-block {
   background: #C1D5E3;
-  height: 10vw;
+  height: 35vw;
   width: 80%;
   border: 1px solid #000;
   border-top: none;
@@ -15,7 +15,7 @@
 }
 
 .team-title {
-  margin-top: 20%;
+  padding-top: 10%;
   font-size: 3.75vw;
 }
 
@@ -24,9 +24,6 @@
   justify-content: space-around;
   margin: 10% auto;
   width:90%;
-}
-.team-members img {
-  width: 30%;
 }
 
 .join-community {
@@ -61,3 +58,35 @@
   color: white;
   cursor: pointer;
 }
+.mobile {
+  display:none;
+}
+.pc {
+  width: 30%;
+}
+@media (max-width: 968px) {
+  .team-title {
+    font-size: 8vw;
+  }
+  .team-members{
+    display: block;
+    width: 90%;
+  }
+  .join-community h1 {
+    font-size: 8vw;
+  }
+  .join-community div {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+  .pc{
+    display: none;
+  }
+  .mobile {
+    display:block;
+    width: 80%;
+    margin: 40px auto;
+  }
+}
+
+

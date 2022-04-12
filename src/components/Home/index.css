@@ -26,7 +26,7 @@
 
 .express-img {
   margin-top: 40px;
-  width: 50rem;
+  width: 25%;
 }
 
 .hero-man {
@@ -79,7 +79,7 @@
 }
 
 .social-link button:hover {
-  background: #dd3e04;
+  background: #FB613A;
   color: white;
   cursor: pointer;
 }
@@ -91,6 +91,9 @@
   .express-img {
     width: 40vw;
     margin-top:10px;
+  }
+  .coming-button {
+    margin-bottom: 15px;
   }
   .intro { 
     font-size: 2rem;
@@ -109,16 +112,24 @@
 
 @media (max-width: 968px) {
   .express-img {
-    width: 50vw;
+    width: 70vw;
     margin-top:10px;
   }
   .new-button {
     padding: 0 2rem;
+    font-size: 1.5rem;
+    width: 56%;
   }
   .social-link{
-    width: 70vw;
+    width: 56vw;
+    margin-top: 10px;
   }
   .social-link button{
-    width: 30vw;
+    width: 25vw;
+    font-size: 1.5rem;
+  }
+  .intro {
+    width: 80%;
+    font-size: 1.8rem;
   }
 }

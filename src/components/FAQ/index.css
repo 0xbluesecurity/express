@@ -3,21 +3,19 @@
   border: 1px solid #000;
   border-bottom: none;
   background: #C1D5E3;
-  display: flex;
   margin: 0 auto;
-  justify-content: left;
-  height: 60vw;
-  margin-top: 10%;
+  margin-top: -10%;
+  position: relative;
 }
 
 .title {
   display: block;
-  padding: 5vw;
+  padding: 2vw;
   width: 40%;
 }
 .title h1{
-  font-size: 5vw;
-  padding-bottom: 2rem;
+  font-size: 3vw;
+  padding-bottom: 1rem;
 }
 
 .title p{
@@ -26,31 +24,94 @@
 
 .questions {
   display: flex;
-  flex-direction: column;
-  padding-top: 5%;
-  position: absolute;
-  padding-left: 30vw;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .qa {
-  width: 53vw;
-  padding: 5% 0; 
+  width: 35vw;
+  padding: 3% 0; 
 }
 .qa h2 {
-  font-size: 2vw;
+  font-size: 1.2vw;
   border: 1px solid #000;
   background: #fff;
   padding: 2vw;
 }
 .qa p {
-  font-size: 1.3vw;
+  font-size: 1vw;
   border: 1px solid #000;
   background: #fff;
   padding: 2vw;
 }
-
-@media (max-width: 420px) {
+.inline-block {
+  background-color: #000;
+  height:20px;
+  width: 50px;
+}
+.left-block{
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
+}
+.right-block{
+  position: absolute;
+  top: 10%;
+  right: -1.7rem;
+}
+.answer {
+  font-size: 1.2vw;
+}
+@media (max-width: 968px) {
+  .questions{
+    display: block;
+    justify-content:center;
+  }
+  .right-block{
+    top: 2rem;
+  }
+  .left-block{
+    width: 10%;
+  }
+  .qa {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .qa p {
+    font-size: 1.2rem;
+    padding: 1.4rem;
+  }
+  .qa h2 {
+    font-size: 1.4rem;
+    padding: 1.4rem;
+  }
+  .answer {
+    font-size: 1.4rem;
+  }
   .faq-section{
-    height: 50vh;
+    width: 90%;
+    margin-top: -20%;
+  }
+  .title {
+    display: block;
+    padding: 2rem;
+  }
+  .title h1{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .right-block{
+    right: -1rem;
+    width: 5rem;
+  }
+  .left-block{
+    width: 10%;
+    bottom: 2%;
+  }
+  .faq-section{
+    margin-top: -50%;
   }
 }

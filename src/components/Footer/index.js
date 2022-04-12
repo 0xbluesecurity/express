@@ -12,7 +12,7 @@ export default () => {
       <div className="icon-section">
         <a href={socialLink.discord} target="_blank"><img src={discord} className="icon"/></a>
         <a href={socialLink.twitter} target="_blank"><img src={twitter} className="icon"/></a>
-        <img src={ins} className="icon"/>
+        <a href={socialLink.ins} target="_blank"><img src={ins} className="icon"/></a>
       </div>
       <p>2022 Express. All rights reserved.</p>
     </div>

@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
+              <GiHamburgerMenu style={{color:"black"}}/>
             </a>
           </div>
         </div>
